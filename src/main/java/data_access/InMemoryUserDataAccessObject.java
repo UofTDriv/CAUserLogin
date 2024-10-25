@@ -35,6 +35,10 @@ public class InMemoryUserDataAccessObject implements SignupUserDataAccessInterfa
         return users.get(username);
     }
 
+    public String getCurrentUser() {
+        return currentUser;
+    }
+
     @Override
     public void setCurrentUser(String name) {
         this.currentUser = name;
